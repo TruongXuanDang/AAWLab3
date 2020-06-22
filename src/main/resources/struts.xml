@@ -5,15 +5,17 @@
 <struts>
     <constant name = "struts.devMode" value = "true" />
 
-<!--    <package name = "default" namespace="/" extends = "struts-default">-->
-<!--        <action name = "product" class = "com.demo.action.ProductAction" method = "execute">-->
-<!--            <result name = "success" type="redirect">/list</result>-->
-<!--            <result name = "bad">/fail.jsp</result>-->
-<!--            <result name = "input">/product.jsp</result>-->
-<!--        </action>-->
-<!--        <action name = "list" class = "com.demo.action.ListAction" method = "execute">-->
-<!--            <result name = "success">/list.jsp</result>-->
-<!--            <result name = "bad">/fail.jsp</result>-->
-<!--        </action>-->
-<!--    </package>-->
+    <package name = "default" namespace="/" extends = "struts-default">
+
+        <action name = "product" class = "com.demo.action.ProductAction" method = "execute">
+            <result name = "success" type="redirect">/list.jsp</result>
+            <result name = "bad">/fail.jsp</result>
+            <result name = "input">/product.jsp</result>
+        </action>
+
+        <action name = "list" class = "com.demo.action.ListAction" method = "execute">
+            <result name = "success">/list.jsp</result>
+            <result name = "bad">/fail.jsp</result>
+        </action>
+    </package>
 </struts>
